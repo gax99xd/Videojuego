@@ -3,7 +3,7 @@ import random
 import sys
 import math
 import os
-import
+
 # Inicializar pygame
 pygame.init()
 

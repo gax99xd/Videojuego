@@ -3,7 +3,7 @@ import random
 import sys
 import math
 import os
-import
+
 # Inicializar pygame
 pygame.init()
 
@@ -233,24 +233,6 @@ def actualizar_juego(tiempo_actual):
             perder_vida()
     monstruos = monstruos_vivos
 
-#Imagen de nave en el centro 
-def cargar_imagen_nave(ruta="nave.png"):
-    """Intenta cargar una imagen para la nave. Si no existe, se dibuja una nave simple."""
-    if os.path.exists(ruta):
-        try:
-            imagen = pygame.image.load(ruta)
-            tamano = max(80, min(ANCHO // 5, 150))
-            imagen = pygame.transform.scale(imagen, (tamano, tamano))
-            return imagen
-        except:
-            print(f"No se pudo cargar {ruta}, usando nave dibujada")
-            return None
-    else:
-        print(f"No se encontró {ruta}. Crea un archivo 'nave.png' en la misma carpeta")
-        print("o usa la nave dibujada automáticamente.")
-        return None, False
-    
-imagen_nave, usar_imagen= cargar_imagen_nave("nave.png")
 
 
 

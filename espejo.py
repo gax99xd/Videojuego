@@ -105,7 +105,7 @@ class Monstruo:
             if resto < 0.5 and int(tiempo_actual * 10) % 2 == 0:
                 color_cuerpo = (255, 50, 50)
             else:
-                color_cuerpo = (139, 69, 19)
+                color_cuerpo = (139, 69, 19)hjgjgh
             
             # Cuerpo
             pygame.draw.circle(superficie, color_cuerpo, (int(self.x), int(self.y)), self.tamano // 2)
